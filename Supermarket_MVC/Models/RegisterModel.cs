@@ -10,7 +10,7 @@ namespace Supermarket_MVC.Models
     [Table("EmployeeDetails")]
     public class RegisterModel
     { 
-        //primary key 
+        //primary key.
         [Key]
         //Auto increment
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
