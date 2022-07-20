@@ -13,8 +13,11 @@ namespace Supermarket_MVC.Models
         //Auto increment
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
+        [MinLength(3, ErrorMessage = "Enter minimum 3 character")]
         public string Name { get; set; }
+        [Required]
         public decimal Price { get; set; }
+        [Range(1,int.MaxValue)]
         public int Quantity { get; set; }
 
        

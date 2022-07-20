@@ -22,7 +22,7 @@ namespace Supermarket_MVC.Models
         [Required]
         public int Age { get; set; }
         [Required]
-        [MinLength (4,ErrorMessage = "Enter minimum 4 character")]
+        [MinLength(4,ErrorMessage = "Enter minimum 4 character")]
         public string  UserName { get; set; }
         [Required]
         public string Password { get; set; }

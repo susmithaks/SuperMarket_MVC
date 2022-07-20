@@ -9,5 +9,6 @@ namespace Supermarket_MVC.Models
     public class SuperMarketcontext : DbContext
     {
         public DbSet<RegisterModel> RegisterDetails { get; set; }
+        public DbSet<Item_Details> ItemDetails { get; set; }
     }
 }
